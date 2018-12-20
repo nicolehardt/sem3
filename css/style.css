@@ -1,0 +1,1598 @@
+* {
+  box-sizing: border-box;}
+
+  body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'avenir', sans-serif;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  #frontpage {
+    background-image: url("../img/b.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+
+  #laespage {
+    background-image: url("../img/tall.jpg");
+    background-size: 120%;
+    background-repeat: no-repeat;
+  }
+
+
+
+/* Loaderpage */
+
+#load_screen{
+  background: #fff;
+  opacity: 1;
+  position: fixed;
+  z-index: 10000000000;
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+#load_screen #loading{
+  /*color: #fff;*/
+  position: fixed;
+  width: 5%;
+  height: 5%;
+  top: 34%;
+  left: 36%;
+}
+
+#load_screen #loading img{
+  width: 100px;
+  height: auto;
+}
+
+/*Loaderpage slutter */
+
+
+/*Knapper*/
+  .open-button {
+    text-align: center;
+  }
+
+  /* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+background-color: #555;
+color: white;
+padding: 16px 40px;
+border: none;
+border-radius: 40px;
+cursor: pointer;
+opacity: 0.8;
+position: fixed;
+bottom: 23px;
+right: 28px;
+width: 70px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+display: none;
+position: fixed;
+bottom: 0;
+right: 15px;
+border: 3px solid #f1f1f1;
+z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+max-width: 300px;
+padding: 10px;
+background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+width: 100%;
+padding: 15px;
+margin: 5px 0 22px 0;
+border: none;
+background: #f1f1f1;
+resize: none;
+min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+background-color: #4CAF50;
+color: white;
+padding: 16px 20px;
+border: none;
+cursor: pointer;
+width: 100%;
+margin-bottom:10px;
+opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+opacity: 1;
+}
+
+
+/* Nav */
+header button {
+  border: none;
+  float: right;
+  font-size: 16px;
+  padding: 5%;
+  position: absolute;
+  right: 3%;
+  top: 1%;
+
+}
+
+#open{
+  background-color: transparent;
+  color: white;
+
+}
+
+
+#videopage #open{
+  color: #27292E;
+}
+
+#close{
+  background-color: #27292E;
+  color: white;
+}
+
+.underside #close{
+  padding: 0;
+  top: -3%;
+  right: 9%;
+}
+
+nav{
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  width: 50%;
+  display: none;
+}
+
+#videopage nav{
+  right: 4%;
+  top: 10%;
+}
+
+nav ul{
+  list-style-type: none;
+  background-color: #27292E;
+  padding: 4%;
+  margin-top: 2em;
+  margin-right: 3%;
+  border-radius: 15px;
+}
+
+nav ul li{
+  margin: 2%;
+}
+
+nav a{
+  color: white;
+}
+
+/*Nav slut*/
+
+
+.underside main{
+  margin-bottom: 3em;
+}
+
+
+
+
+
+
+
+
+#om header, #programmer header, #sigerfolk header, #qoga header{
+  background-color: #27292E;
+  padding: 20 20%;
+}
+
+#logounderside {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  max-width: 30%;
+}
+
+.underside h1 {
+  text-align: center;
+}
+
+#omside {
+  text-align: left;
+}
+
+.underside h1, .underside h4{
+ color: #27292E;
+ font-weight: bolder;
+}
+
+.underside h4 {
+  margin-top: 14%;
+}
+
+#omline {
+  margin: 1px 8px;
+  line-height: 1.3;
+}
+
+#imgklaus{
+  max-width: 50%;
+  float: right;
+  margin: 0 6px 0 4px;
+}
+
+#klaus2{
+  display: none;
+}
+
+#mitnavn{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*stil spørgsmål form*/
+#om form, #qoga form {
+  margin: 0 auto;
+  margin-top: 10%;
+  max-width: 80%;
+  padding: 1em;
+  border: 1px solid #E27B14;
+  border-radius: 1em;
+  background-color: #27292E
+}
+
+/*div + div {
+  margin:auto;
+  margin-top: 1em;
+}*/
+
+label {
+  display: inline-block;
+  color: white;
+  font-weight: bold;
+  width: 80%;
+  text-align: left;
+}
+
+#om input, #qoga input, #om textarea, #qoga textarea {
+  width: 90%;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  border: 1px solid #999;
+
+}
+
+#om textarea, #qoga textarea {
+  vertical-align: top;
+  height: 5em;
+  resize: vertical;
+}
+
+#buttonom{
+  width: 70%;
+  border: 1px solid white;
+  border-radius: 1em;
+  background-color: #E27B14;
+  text-align: center;
+}
+
+#buttonom2 {
+ color: white;
+ text-align: center;
+ margin: 0 auto;
+ background-color: transparent;
+ border: none;
+}
+
+/*om side slutter*/
+
+
+/*Programmer side starter*/
+#programmerside{
+  margin: 1px 8px;
+}
+#programmerside p {
+  color: white;
+}
+
+.kasse6 {
+  margin: 10px 8px 20px 8px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  line-height: 1.3;
+  border: 1px solid #E27B14;
+  background-color: #27292E;
+}
+
+.boks1 h3 {
+  color: #E27B14;
+}
+
+.boks1 h5 {
+  line-height: 1.2;
+  font-weight: normal;
+  color: white;
+}
+
+#programmerside img{
+  display: block;
+  max-width: 90%;
+  margin: auto;
+}
+
+.boksknap {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+/*Programmer side slutter*/
+
+/*Hvad siger folk starter*/
+
+.udtalelser{
+margin: 10px 8px 20px 8px;
+padding: 5px 10px;
+border-radius: 10px;
+line-height: 1.3;
+border: 1px solid #E27B14;
+background-color: #27292E;
+}
+
+.udtalelser p{
+color: white;
+}
+
+.udtalelser .sagt {
+  font-weight: bolder;
+  color: #E27B14;
+  font-size: 20px;
+}
+
+.siger {
+  font-style: italic;
+  color: white;
+}
+
+/*Hvad siger folk slutter*/
+
+/*q&a starter*/
+#qogaside h1 {
+  text-align: center;
+}
+
+#qogaside {
+  text-align: left;
+}
+
+#qoga h1, h4{
+ color: #27292E;
+ font-weight: bolder;
+}
+
+
+#qogaline {
+  margin: 1px 8px;
+  line-height: 1.3;
+}
+
+
+/*q&a slutter*/
+
+
+#kasse4 {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  padding: 0 3%;
+}
+
+.udtalelser{
+  width: 31%;
+  height: auto;
+
+}
+
+  #sigerfolkside h1 {
+    text-align: left;
+    margin-left: 5%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*FORSIDE*/
+#frontpage #logo {
+    margin-top: 18%;
+    max-width: 30%;
+  }
+
+#forside {
+  margin-top: 10%;
+}
+
+  h1, h2 {
+    color: white;
+  }
+
+  #forside h2{
+    margin-top: -10%;
+    font-weight: bolder;
+    font-size: 4em;
+  }
+
+  #line {
+    color: white;
+    margin: 5% 10%;
+    font-size: 1.3em;
+    line-height: 1.1;
+  }
+
+  #line2 {
+    margin: 0% 0% 6% 0%;
+  }
+
+a {
+  text-decoration: none;
+}
+  .button1 {
+    width: 60%;
+    background-color: white;
+    padding: 8px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1.3em;
+    margin: 30% 2px 5% 5px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  .button2 {
+    width: 45%;
+    background-color: white;
+    padding: 8px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1em;
+    margin: 1% 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  /*LÆS MERE*/
+
+  #sidelaes{
+  margin-top: 10%;
+  }
+
+#laesp {
+  color: white;
+  line-height: 1.1;
+  margin: 3% 0;
+}
+
+  #citat {
+    font-style: oblique;
+    font-weight: bold;
+    margin: 2% 14%;
+    font-size: 1em;
+  }
+
+  .laesmere {
+    font-size: 1.2em;
+    margin: 6% 4%;
+  }
+
+  .button3 {
+    width: 50%;
+    background-color: white;
+    padding: 10px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    font-size: 1em;
+    margin: 15% auto 0 auto;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  .button4 {
+    width: 40%;
+    background-color: white;
+    padding: 10px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: block;
+    font-size: 0.8em;
+    margin: 3% auto;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+
+
+/*VIDEOSIDE*/
+/*#topfoto{
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}*/
+
+#videopage #search{
+  display: none;
+}
+
+#videopage header{
+  position: absolute;
+  text-align: left;
+}
+
+
+
+#videopage header img{
+  margin: 1.5em 1em;
+  width: 27%;
+}
+
+#sidevideo{
+  background-image: url(../img/vid1.jpg);
+  height: 580px;
+  background-position: center;
+  background-size: cover;
+}
+
+#videopage #toptitle {
+  position: absolute;
+  color: #E27B14;
+  font-size: 2.6em;
+  top: 57%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+
+#videopage #toptitle2 {
+  position: absolute;
+  color: white;
+  margin: 0;
+  font-size: 0.9em;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+#kategorier{
+  margin: 1.5em 0;
+}
+
+#kategorier h1{
+  color: #27292E;
+  font-size: 2em;
+}
+
+
+#kategorier a{
+  border: solid 1px #707070;
+  border-radius: 35px;
+  display: inline-block;
+  padding: 0.5em;
+  width: 30%;
+  margin: 0.1em;
+  background-color: #27292E;
+  color: #E5E5E5;
+}
+
+#kategorier a .fa-times{
+  color: #FF9100;
+}
+
+#kategorierdesk{
+  display: none;
+}
+
+/*
+#kategorier h2{
+  color: #27292E;
+  font-size: 1.5em;
+  display: inline-block;
+}
+*/
+
+.videoslider {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  width: 100%;
+  margin-bottom: 25px;
+  margin-left:
+}
+
+.videoslider figure{
+  margin: 0 2% 0 0;
+}
+
+.videoslider figure .videoboks{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.vid {
+  margin-right: 5px;
+}
+
+
+#videopage h5 {
+text-align: left;
+color: #27292E;
+margin: 0 0 0 10px;
+font-size: 24px;
+}
+
+
+
+
+/* ---------- LIVE-CHAT ---------- */
+
+#live-chat {
+	bottom: 0;
+	font-size: 12px;
+	right: 24px;
+	position: fixed;
+	width: 300px;
+  z-index: 10000;
+}
+
+#live-chat section {
+	background: #293239;
+	border-radius: 5px 5px 0 0;
+	color: #fff;
+	cursor: pointer;
+	padding: 7px 24px;
+}
+
+#live-chat h4:before {
+	background: #1a8a34;
+	border-radius: 50%;
+	content: "";
+	display: inline-block;
+	height: 8px;
+	margin: 0 8px 0 0;
+	width: 8px;
+}
+
+#live-chat h4 {
+	font-size: 12px;
+  color: white;
+}
+
+#live-chat h5 {
+	font-size: 10px;
+}
+
+#live-chat form {
+	padding: 24px;
+}
+
+#live-chat input[type="text"] {
+	border: none;
+	border-radius: 3px;
+	padding: 8px;
+	outline: none;
+	width: 234px;
+}
+
+.chat-message-counter {
+	background: #e62727;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	display: none;
+	font-size: 12px;
+	font-weight: bold;
+	height: 28px;
+	left: 0;
+	line-height: 28px;
+	margin: -15px 0 0 -15px;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 28px;
+}
+
+.chat-close {
+	/*background: #1b2126;*/
+	border-radius: 50%;
+	color: #fff;
+	display: block;
+	float: right;
+	font-size: 10px;
+	height: 16px;
+	line-height: 16px;
+	margin: 10px 0 0 0;
+	text-align: center;
+	width: 16px;
+}
+
+.chat {
+  background: #fff;
+  display: none;
+}
+
+.chat-history {
+	height: 252px;
+	padding: 8px 24px;
+	overflow-y: scroll;
+}
+
+.chat-message {
+	margin: 16px 0;
+}
+
+.chat-message img {
+	border-radius: 50%;
+	float: left;
+}
+
+.chat-message-content {
+	margin-left: 56px;
+}
+
+.chat-time {
+	float: right;
+	font-size: 10px;
+}
+
+.chat-feedback {
+	font-style: italic;
+	margin: 0 0 0 80px;
+}
+
+
+.chat {
+
+}
+
+/* Livechat slut*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  height: 200px;
+  background-color: #27292E;
+  padding: 1em;
+
+}
+
+footer section{
+  margin: 1em auto;
+}
+
+footer a{
+  color: white;
+  font-weight: bolder;
+}
+
+footer #footermenu a{
+  color: #FF9100;
+  font-weight: normal;
+  margin: 0.5em;
+}
+
+footer #footersome a{
+  color: #FF9100;
+  font-size: 1.8em;
+  margin: 0.2em;
+}
+
+.contain{
+  display: none;
+}
+
+
+@media only screen and (min-width: 700px){
+  /*om side*/
+  #imgklaus{
+    max-width: 20%;
+    float: right;
+    margin-left: 10px;
+  }
+  #om h4 {
+    margin-top: 6%;
+  }
+
+  #om form, #qoga form {
+    margin-top: 6%;
+  }
+/*omside slut*/
+
+#buttonom {
+  text-align: center;
+  width: 30%;
+}
+
+/*Programmer side*/
+  #boks1 {
+    padding: 5px 40px 20px 40px;
+  }
+
+  #qogaline, #omline {
+    margin: 1px 80px;
+  }
+}
+
+
+/*Lodret iPad*/
+@media only screen and (min-width: 760px){
+  /*Video-side*/
+
+  #load_screen #loading{
+    top: 40%;
+    left: 43%;
+  }
+
+  #videopage header img{
+    width: 15%;
+    margin: 2em;
+  }
+
+  #videopage header button{
+    font-size: 18px;
+    padding: 4%;
+  }
+
+ #videopage #open{
+    right: 0;
+    top: 4%;
+  }
+
+  #videopage ul{
+    margin-top: 3em;
+  }
+
+  #sidevideo{
+    height: 700px;
+  }
+
+  #videopage #toptitle{
+    top: 59%;
+  }
+
+  #videopage #toptitle2{
+    top: 64%;
+  }
+
+  #videopage .sliders h5{
+    font-size: 22px;
+  }
+
+  video{
+    width: 230px;
+    height: 130px;
+  }
+
+  #logounderside{
+    max-width: 15%;
+  }
+
+
+footer{
+    height: 160px;
+  }
+  /*Video-side slutter*/
+
+}
+
+
+
+
+/*#videopage main #live-chat{
+  display: none;
+}*/
+
+
+
+
+@media only screen and (min-width: 1024px){
+  /*Video-side*/
+
+  #load_screen #loading img {
+    width: 70px;
+  }
+
+  #load_screen #loading {
+    left: 47%;
+  }
+
+  #sidevideo{
+    background:
+    /* top, transparent grey, faked with gradient */
+    linear-gradient(
+      rgba(5, 0, 0, 0.45),
+      rgba(5, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+    url(../img/arb.png);
+    background-position: center;
+    background-size: cover;
+    height: 470px;
+  }
+
+  #videopage #toptitle{
+    top: 35%;
+    font-size: 80px;
+  }
+
+  #videopage #toptitle2{
+    top: 44%;
+    font-size: 16px;
+  }
+
+  #kategorier{
+    margin: 3.5em 0;
+  }
+
+  #kategorier h1{
+    font-size: 2.5em;
+  }
+
+  #kategorier a{
+    width: 15%;
+    margin: 0.4em;
+  }
+
+  .underside header button{
+    padding: 4%;
+    font-size: 24px;
+  }
+
+}
+
+
+@media only screen and (min-width: 1060px){
+  /*FORSIDE*/
+
+  #logo {
+    margin-top: 1%;
+    max-width: 10%;
+  }
+
+  #laes{
+    position: absolute;
+    margin-top: 1%;
+    margin-left: 47%;
+    color: white;
+    font-size: 1em;
+    font-weight: bolder;
+    text-decoration: none;
+  }
+
+  h1 {
+    color: white;
+    font-size: 5em;
+  }
+
+  h2 {
+    color: white;
+    font-size: 7em;
+    font-weight: bolder;
+    margin-top: -4%;
+  }
+
+  #line {
+    color: white;
+    font-size: 1.5em;
+    font-weight: lighter;
+    font-style: oblique;
+  }
+
+  #omline{
+    margin: 1px 50px;
+  }
+
+  .button1 {
+    width: 23%;
+    background-color: white;
+    padding: 8px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1.9em;
+    margin: 3% 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  .button2 {
+    width: 15%;
+    background-color: white;
+    padding: 10px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1.4em;
+    margin: 1% 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  /* SIDE LÆS MERE*/
+#sidelaes {
+  margin: 0 18%;
+}
+
+  .laesmere {
+    color: white;
+    font-size: 1em;
+    font-weight: lighter;
+  }
+
+  #citat {
+    color: white;
+    font-style: oblique;
+    font-weight: bolder;
+    margin: 3% 25%;
+  }
+
+  .button3 {
+    width: 19%;
+    background-color: white;
+    padding: 10px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1em;
+    margin: 3% 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  .button4 {
+    width: 19%;
+    background-color: white;
+    padding: 10px 32px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    display: inline-block;
+    font-size: 1em;
+    margin: 3% 2px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0px 3px 5px #000000;
+  }
+
+  /*VIDEOSIDE*/
+
+  #videopage a{
+    color: white;
+  }
+
+  #videopage #search{
+    display: inline-block;
+    float: right;
+    width: 24%;
+    margin: 2.3em;
+  }
+
+  #videopage #search input{
+    float: left;
+    background-color: #27292E;
+    color: white;
+    border-radius: 35px;
+    border: solid 1px black;
+    height: 2.2em;
+    padding-left: 1em;
+  }
+
+  #videopage #searchbut{
+    display: inline-block;
+    /*float: left;*/
+    border-radius: 35px;
+    position: absolute;
+    right: 13%;
+    top: 36%;
+    padding: 0;
+    background-color: #27292E;
+    color: white;
+
+  }
+
+  #videopage #search section{
+    border-radius: 35px;
+
+  }
+
+  #videopage #search a{
+    float: right;
+    background-color: #FF9100;
+    color: white;
+    padding: 0.5em;
+    border-radius: 35px;
+  }
+
+  header button{
+    display: none;
+  }
+
+  header nav{
+    display: inline-block;
+    float: left;
+    width: 55%;
+    left: 10%;
+    top: 0;
+
+  }
+
+  #videopage header nav{
+    display: inline-block;
+    float: left;
+    left: 14%;
+    top: -11%;
+    width: 55%;
+  }
+
+  nav ul{
+    padding: 0;
+    background-color: transparent;
+    margin-top: 2.5em;
+  }
+
+  nav ul li{
+    display: inline-block;
+  }
+
+  #videopage #toptitle{
+    top: 45%;
+    font-size: 100px;
+  }
+
+  #videopage #toptitle2{
+    top: 60%;
+  }
+
+  #kategorierdesk{
+    display: block;
+  }
+
+  #kategorierdesk h1{
+    font-size: 3em;
+    color: #27292E;
+  }
+
+  #kategorierdesk a{
+    width: 12%;
+    margin: 0.4em;
+    border: solid 1px #707070;
+    border-radius: 35px;
+    display: inline-block;
+    padding: 0.5em;
+    background-color: #27292E;
+    color: #E5E5E5;
+  }
+
+#kategorierdesk a .fa-times{
+  color: #FF9100;
+}
+
+  #kategorier{
+    display: none;
+  }
+
+
+  #sliders {
+    display: none;
+  }
+
+  #videopage .contain h4{
+    margin: -10px 0;
+  }
+
+  #videopage h4{
+    text-align: left;
+  }
+
+  #videopage ::-webkit-scrollbar {
+    display: none;
+}
+
+  a:link,
+  a:hover,
+  a:active,
+  a:visited {
+    transition: color 150ms;
+    color: #95a5a6;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #7f8c8d;
+    text-decoration: underline;
+  }
+  .contain {
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    margin: 4em 0;
+  }
+  .row {
+    overflow: scroll;
+    width: 100%;
+  }
+  .row__inner {
+    transition: 450ms -webkit-transform;
+    transition: 450ms transform;
+    transition: 450ms transform, 450ms -webkit-transform;
+    font-size: 0;
+    white-space: nowrap;
+    margin: 30px 0;
+    padding-bottom: 10px;
+  }
+  .tile {
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    height: 140.625px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+  .tile__img {
+    width: 250px;
+    height: 140.625px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .tile__details {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-size: 10px;
+    opacity: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+    transition: 450ms opacity;
+  }
+  .tile__details:after,
+  .tile__details:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: #000;
+  }
+  .tile__details:after {
+    margin-top: -25px;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    border: 3px solid #ecf0f1;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  .tile__details:before {
+    content: '▶';
+    color: white;
+    left: 0;
+    width: 100%;
+    font-size: 30px;
+    margin-left: 4px;
+    margin-top: -22px;
+    text-align: center;
+    z-index: 2;
+  }
+  .tile:hover .tile__details {
+    opacity: 1;
+  }
+  .tile__title {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    padding: 10px;
+  }
+  .row__inner:hover {
+    -webkit-transform: translate3d(-62.5px, 0, 0);
+            transform: translate3d(-62.5px, 0, 0);
+  }
+  .row__inner:hover .tile {
+    opacity: 0.3;
+  }
+  .row__inner:hover .tile:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 1;
+  }
+  .tile:hover ~ .tile {
+    -webkit-transform: translate3d(125px, 0, 0);
+            transform: translate3d(125px, 0, 0);
+  }
+
+    footer{
+      margin-top: 4em;
+    }
+
+    footer #footersome a:hover{
+      color: white;
+    }
+
+    /*omside*/
+      #om header, #programmer header, #sigerfolk header, #qoga header{
+        background-color: #27292E;
+        padding: 3%;
+      }
+
+      .underside nav ul{
+        margin-top: 1.5em;
+      }
+
+      #logounderside {
+        margin-top: -2%;
+        /*margin-bottom: 3%;*/
+        max-width: 10%;
+        float: left;
+      }
+
+      #omside{
+        text-align: left;
+        margin: 0 8%;
+      }
+      #imgklaus{
+        display: none;
+      }
+
+      #om h4 {
+        margin-top: 6%;
+      }
+
+
+      #kasse1 {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        margin: auto;
+        padding-top: 3%;
+      }
+
+      #kasse2{
+        width: 60%;
+        padding: 0 10% 0 0;
+      }
+
+      #kasse2 h1{
+        text-align: left;
+      }
+
+
+      #kasse3{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+      }
+
+      #omside #kasse3 #klaus2{
+        display: block;
+        width: 70%;
+        margin: auto;
+      }
+
+      #qogaside #kasse3 #klaus2{
+        display: block;
+        width: 70%;
+        margin: auto;
+      }
+
+
+
+
+
+      /*stil spørgsmål form*/
+      #om form, #qoga form {
+        margin-top: 10%;
+        width: 70%;
+        padding: 1em;
+        border: 1px solid #E27B14;
+        border-radius: 1em;
+        background-color: #27292E
+      }
+
+      /*div + div {
+        margin:auto;
+        margin-top: 1em;
+      }*/
+
+      label {
+        display: inline-block;
+        color: white;
+        font-weight: bold;
+        width: 80%;
+        text-align: left;
+      }
+
+      #om input, #qoga input, textarea {
+        width: 90%;
+        -moz-box-sizing: border-box;
+             box-sizing: border-box;
+        border: 1px solid #999;
+
+      }
+
+      textarea {
+        vertical-align: top;
+        height: 5em;
+        resize: vertical;
+      }
+
+      #buttonom{
+        width: 70%;
+        border: 1px solid white;
+        border-radius: 1em;
+        background-color: #E27B14;
+        text-align: center;
+      }
+
+      #buttonom2 {
+       color: white;
+       text-align: center;
+      }
+    /*omside slut*/
+
+    /*programmerside*/
+      #boks1, #boks2, #boks3, #boks4 {
+        display: flex;
+        flex-direction: row;
+      background-color: #27292E;
+      padding: 5px 5px 20px 5px;
+    }
+
+    #kasse5 {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+    }
+
+    .kasse6 {
+      width: 45%;
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+    }
+
+    .boks1 {
+      width: 50%;
+    }
+
+    .boks1img{
+      width: 50%;
+      margin: auto;
+    }
+
+    #programmerside p {
+      color: white;
+    }
+
+    /*programmerside slut*/
+
+    #qogaside{
+      text-align: left;
+      margin: 0 8%;
+    }
+
+    #kasse4 {
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: center;
+      padding: 0 5%;
+    }
+
+    .udtalelser{
+      width: 20%;
+      height: auto;
+
+    }
+
+      #sigerfolkside h1, #programmerside h1  {
+        text-align: left;
+      }
+
+
+    }
+
+
+}
+
+@media only screen and (min-width: 1317px){
+  #omline{
+    margin: 1px 50px;
+  }
+}
